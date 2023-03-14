@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argentina</title>
+    <style>
+     .allert{
+        color: aqua;
+     }
+    </style>
 </head>
 <body>
-    <p>The Argentina national football team, also known as La Albiceleste (The White and Sky Blue), is one of the most successful teams in international football history. The team has won two FIFA World Cups (in 1978 and 1986), as well as 15 Copa America titles and one Confederations Cup.</p>
-    <p>Argentina's success in football can be attributed to a number of factors. Firstly, the country has a rich footballing culture and a long history of producing talented players. Legends like king Diego Maradona, god Lionel Messi, and maestro Alfredo Di Stefano have all hailed from Argentina, and have contributed significantly to the country's success on the international stage.</p>
-    <p>In addition to this, Argentina has a strong domestic football league, which provides a solid foundation for the national team. The Argentine Primera Division is home to some of the world's most famous clubs, including Boca Juniors, River Plate, and Independiente, and has a reputation for producing technically gifted players.</p>
-    <p>That said, Argentina's current squad still boasts some of the best players in the world, including Messi, Paulo Dybala, and Sergio Aguero. With a talented roster and a footballing tradition that is second to none, Argentina remains a force to be reckoned with on the international stage.
-    </p>
+    <script>
+    const teamName = `Argentina`;
+    const teamLegends = {
+        king: `Diego Maradona`,
+        god: `Lionel Messi`,
+        maestro: `Alfredo Di Stefano`
+
+
+    };
+    const teamCurrentPlayers = [`${teamLegends.god}`, `Paulo Dybala`,  `Sergio Aguero`];
+    let trophiesAmount = 15;
+    const teamCurrentPlayersWithComa = teamCurrentPlayers.join(`, `);
+    
+
+    document.body.innerHTML = ` <p>The <span class=allert >${teamName}</span> national football team, also known as La Albiceleste (The White and Sky Blue), is one of the most successful teams in international football history. The team has won two FIFA World Cups (in 1978 and 1986), as well as ${trophiesAmount} Copa America titles and one Confederations Cup.</p>
+        <p>${teamName}'s success in football can be attributed to a number of factors. Firstly, the country has a rich footballing culture and a long history of producing talented players. Legends like king ${teamLegends.king}, god ${teamLegends.god}, and maestro ${teamLegends.maestro} have all hailed from ${teamName}, and have contributed significantly to the country's success on the international stage.</p>
+        <p>In addition to this, ${teamName} has a strong domestic football league, which provides a solid foundation for the national team. The ${teamName} Primera Division is home to some of the world's most famous clubs, including Boca Juniors, River Plate, and Independiente, and has a reputation for producing technically gifted players.</p>
+        <p>That said, ${teamName}'s current squad still boasts some of the best players in the world, including ${teamCurrentPlayersWithComa}. With a talented roster and a footballing tradition that is second to none, ${teamName} remains a force to be reckoned with on the international stage.
+        </p>`;
+        </script>
+    
 </body>
 </html>
